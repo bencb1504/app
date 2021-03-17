@@ -1,0 +1,59 @@
+{
+    "name": "bensampo/laravel-enum",
+    "type": "library",
+    "description": "Simple, extensible and powerful enumeration implementation for Laravel.",
+    "keywords": [
+        "bensampo",
+        "enum",
+        "laravel",
+        "package",
+        "validation"
+    ],
+    "homepage": "https://github.com/bensampo/laravel-enum",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Sampson",
+            "homepage": "https://sampo.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.4",
+        "php" : "~7.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.3",
+        "phpunit/phpunit": "7.3.*",
+        "laravel/framework": "5.7.*",
+        "orchestra/testbench": "3.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "BenSampo\\Enum\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BenSampo\\Enum\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "BenSampo\\Enum\\EnumServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

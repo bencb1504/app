@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 10px;
+  background: #fff;
+  color: #212121;
+  font-family: "Noto Sans Japanese", "Helvetica Neue", "Segoe UI", "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, "ヒラギノ角ゴ ProN W3", Meiryo, "M+ 1p", sans-serif;
+  line-height: 1.5;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center; }
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 16px; } }
+
+img {
+  width: 100%;
+  height: auto; }
+
+h2 {
+  font-size: 2.4em;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.03em; }
+
+p {
+  letter-spacing: 0.01em; }
+
+.wrapper {
+  margin: auto 16px; }
+@media screen and (min-width: 600px) {
+  .wrapper {
+    margin: auto 32px; } }
+
+.invite-btn {
+  border: none;
+  background: none;
+  padding: 0; }
+.invite-btn:hover {
+  opacity: .8; }
+
+.buruburu {
+  display: inline-block;
+  -webkit-animation: hurueru 0.6s  infinite;
+  animation: hurueru 0.6s  infinite; }
+
+@-webkit-keyframes hurueru {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotateZ(0deg);
+    transform: translate(0px, 0px) rotateZ(0deg); }
+  25% {
+    -webkit-transform: translate(2px, 2px) rotateZ(1deg);
+    transform: translate(2px, 2px) rotateZ(1deg); }
+  50% {
+    -webkit-transform: translate(0px, 2px) rotateZ(0deg);
+    transform: translate(0px, 2px) rotateZ(0deg); }
+  75% {
+    -webkit-transform: translate(2px, 0px) rotateZ(-1deg);
+    transform: translate(2px, 0px) rotateZ(-1deg); }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotateZ(0deg);
+    transform: translate(0px, 0px) rotateZ(0deg); } }
+
+@keyframes hurueru {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotateZ(0deg);
+    transform: translate(0px, 0px) rotateZ(0deg); }
+  25% {
+    -webkit-transform: translate(2px, 2px) rotateZ(1deg);
+    transform: translate(2px, 2px) rotateZ(1deg); }
+  50% {
+    -webkit-transform: translate(0px, 2px) rotateZ(0deg);
+    transform: translate(0px, 2px) rotateZ(0deg); }
+  75% {
+    -webkit-transform: translate(2px, 0px) rotateZ(-1deg);
+    transform: translate(2px, 0px) rotateZ(-1deg); }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotateZ(0deg);
+    transform: translate(0px, 0px) rotateZ(0deg); } }
+
+.hero-desc {
+  margin: 1em auto 3.8em; }
+.hero-desc h2 {
+  line-height: 1.375; }
+.hero-desc h2 span {
+  color: #ff0000;
+  font-size: 1.3em; }
+.hero-desc p {
+  font-size: 1.4em;
+  line-height: 1.607;
+  margin: 1.6em auto 2em; }
+.hero-desc .invite-btn {
+  margin-top: 2.5em; }
+
+.howto {
+  margin-top: 4em; }
+.howto h2 {
+  color: #ff0000; }
+.howto hr {
+  margin: 1em auto 3em;
+  width: 20em;
+  height: 0.4em;
+  background: url("../images/invite_code/border.png") no-repeat;
+  background-size: contain;
+  border: none; }
+.howto h3 {
+  color: #ec6941;
+  line-height: 1;
+  width: 8.3em;
+  margin: 0 auto; }
+.howto p {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0.7em auto 0.5em; }
+.howto .triangle {
+  width: 0;
+  height: 0;
+  border-left: 2.5em solid transparent;
+  border-right: 2.5em solid transparent;
+  border-top: 2.5em solid #dcdcdc;
+  margin: 2.5em auto; }
+.howto .invite-btn {
+  margin-top: 0.5em; }
+.howto-desc_box {
+  color: #221815;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 2px solid #959595;
+  height: 6.6em; }
+.howto-desc_box .ttl-h4 {
+  position: relative;
+  font-size: 1.4em;
+  letter-spacing: 0.02em;
+  background: #dcdcdc;
+  width: 8.96em;
+  height: 100%; }
+.howto-desc_box .ttl-h4 h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  width: 100%; }
+.howto-desc_box p {
+  font-size: 1.7em;
+  background: #fff; }
+
+.attention {
+  margin-top: 6em;
+  padding: 1em 10px 3.5em;
+  background: url("../images/invite_code/attention-bg.jpg") repeat;
+  background-size: cover;
+  border-top: 2px solid #000; }
+@media screen and (min-width: 600px) {
+  .attention {
+    padding: 1em 32px 3.5em; } }
+.attention h2 {
+  color: #fff;
+  font-size: 1.8em;
+  margin: 0 auto;
+  width: 73%; }
+.attention h2 img {
+  margin: 0 auto; }
+.attention ul {
+  color: #fff;
+  text-align: left; }
+.attention ul li {
+  font-size: 1.2em;
+  margin-top: 0.8em; }
+
+footer {
+  width: 100%;
+  background: #000; }
+footer small {
+  color: #fff;
+  font-size: 1em;
+  padding: 0.2em 0; }

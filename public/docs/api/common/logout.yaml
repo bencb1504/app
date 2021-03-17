@@ -1,0 +1,21 @@
+get:
+  tags:
+    - Common
+  security:
+    - CheersAuth: []
+  summary: Logout user
+  operationId: logoutUser
+  produces:
+    - application/json
+  responses:
+    200:
+      description: successful operation
+      schema:
+        type: array
+        example: {
+          status: true,
+          data: [],
+          message: 正常にログアウトしました
+        }
+    401:
+      description: Unauthorized

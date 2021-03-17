@@ -1,0 +1,72 @@
+@charset "UTF-8";
+//メディクリ
+$sssmall:  "(max-width:320px)";
+$ssmall:  "(max-width:480px)";
+$small:  "(max-width:768px)";
+$middle: "(max-width:980px)";
+$large:  "(max-width:1200px)";
+$largeMax: "(min-width:1201px)";
+$img-path-go1:"../images/go1/";
+
+
+@media #{largeMax} {
+    //1201px以上
+}
+@media #{large} {
+    //1200px以下
+}
+@media #{middle} {
+    //980px以下
+}
+@media #{$small} {
+    //768px以下
+}
+@media #{$ssmall} {
+    //480px以下
+}
+@media #{$sssmall} {
+    //320px以下
+}
+
+
+
+.ge2-1-a-3 {
+  height: 100%;
+  text-align: center;
+  .cancel_title {
+    padding: 2em 1.8em 0em 1.8em;
+    font-size: 1.3em;
+    color: #FF66BB;
+    line-height: 1.8;
+    @media #{$sssmall} {
+      font-size: 1.1em;
+    }
+  }
+  .cancel_txt {
+    padding: 1.2em 2.1em 2em 2.1em;
+    color:  #111;
+    @media #{$sssmall} {
+      .sp-none {
+        display: none;
+      }
+    }
+  }
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1.1em;
+    @media #{$sssmall} {
+      font-size: 1em;
+    }
+  }
+  tr {
+    border-bottom: 1px dashed #ccc;
+    td {
+      padding: 1em 1em;
+    }
+    .right {
+      text-align: right;
+    }
+  }
+}

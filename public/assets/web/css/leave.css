@@ -1,0 +1,370 @@
+/* line 2, source/_sass/leave.scss */
+.portlet {
+  width: 100%;
+  height: auto; }
+  /* line 5, source/_sass/leave.scss */
+  .portlet-header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 18px; }
+    /* line 9, source/_sass/leave.scss */
+    .portlet-header__title {
+      width: 100%;
+      height: 30px;
+      background-color: #f3f2f2;
+      font-size: 12px;
+      line-height: 1;
+      letter-spacing: 2px;
+      color: #505050;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 12px;
+      box-sizing: border-box; }
+  /* line 24, source/_sass/leave.scss */
+  .portlet-content {
+    width: 100%;
+    height: auto; }
+
+/* line 32, source/_sass/leave.scss */
+.leave {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  box-sizing: border-box; }
+  /* line 37, source/_sass/leave.scss */
+  .leave-header {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: #505050;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Noto Sans Japanese';
+    margin-bottom: 20px;
+    line-height: 1; }
+  /* line 50, source/_sass/leave.scss */
+  .leave-content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0 8px;
+    box-sizing: border-box; }
+  /* line 58, source/_sass/leave.scss */
+  .leave-reason-list {
+    width: 100%;
+    height: auto;
+    padding: 0 12px;
+    box-sizing: border-box; }
+    /* line 63, source/_sass/leave.scss */
+    .leave-reason-list__item {
+      width: 100%;
+      height: auto;
+      line-height: 1; }
+      /* line 67, source/_sass/leave.scss */
+      .leave-reason-list__item:not(:first-child) {
+        margin-top: 20px; }
+      /* line 70, source/_sass/leave.scss */
+      .leave-reason-list__item .checkbox {
+        display: -webkit-inline-flex;
+        display: -ms-inline-flex;
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        font-family: 'Noto Sans Japanese';
+        color: #222222; }
+        /* line 81, source/_sass/leave.scss */
+        .leave-reason-list__item .checkbox input[type=checkbox] {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+          appearance: checkbox;
+          -webkit-appearance: checkbox; }
+          /* line 87, source/_sass/leave.scss */
+          .leave-reason-list__item .checkbox input[type=checkbox]:checked + span {
+            background-color: #00c3c3; }
+          /* line 90, source/_sass/leave.scss */
+          .leave-reason-list__item .checkbox input[type=checkbox]:checked + span:after {
+            content: "";
+            top: 50%;
+            left: 50%;
+            margin-left: -3px;
+            margin-top: -6px;
+            width: 4px;
+            height: 8px;
+            border-width: 0 2px 2px 0 !important;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: absolute;
+            border: solid #fff; }
+        /* line 107, source/_sass/leave.scss */
+        .leave-reason-list__item .checkbox span {
+          width: 18px;
+          min-width: 18px;
+          height: 18px;
+          box-sizing: border-box;
+          border-radius: 4px;
+          background: 0 0;
+          position: relative;
+          display: inline-block;
+          margin-right: 10px;
+          background-color: #ccc; }
+  /* line 127, source/_sass/leave.scss */
+  .leave-note-list {
+    width: 100%;
+    height: auto;
+    padding: 0 12px;
+    box-sizing: border-box; }
+    /* line 132, source/_sass/leave.scss */
+    .leave-note-list__item {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      height: 20px;
+      font-size: 12px;
+      font-family: 'Noto Sans Japanese';
+      color: #222;
+      padding-left: 25px;
+      box-sizing: border-box;
+      background: url(../images/common/icon-alert_001.svg) left center no-repeat;
+      background-size: 18px 18px; }
+      /* line 147, source/_sass/leave.scss */
+      .leave-note-list__item:not(:first-child) {
+        margin-top: 15px; }
+  /* line 156, source/_sass/leave.scss */
+  .leave-comment {
+    width: 100%;
+    height: auto;
+    padding: 0 12px;
+    box-sizing: border-box;
+    margin-top: 8px; }
+    /* line 162, source/_sass/leave.scss */
+    .leave-comment__input {
+      margin-bottom: 5px;
+      line-height: 1; }
+      /* line 165, source/_sass/leave.scss */
+      .leave-comment__input textarea {
+        font-size: 12px;
+        font-family: 'Noto Sans Japanese';
+        width: 100%;
+        margin: 0;
+        padding: 12px 12px;
+        box-sizing: border-box;
+        background: #fafafa;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        outline: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; }
+    /* line 181, source/_sass/leave.scss */
+    .leave-comment__sum {
+      width: 100%;
+      height: auto;
+      padding: 0 5px;
+      box-sizing: border-box;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      /* line 191, source/_sass/leave.scss */
+      .leave-comment__sum p {
+        font-size: 10px;
+        color: #999;
+        line-height: 1; }
+        /* line 195, source/_sass/leave.scss */
+        .leave-comment__sum p:after {
+          content: " / 180"; }
+  /* line 202, source/_sass/leave.scss */
+  .leave-footer {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0; }
+    /* line 208, source/_sass/leave.scss */
+    .leave-footer__check {
+      width: 100%;
+      height: auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+      margin-bottom: 30px;
+      line-height: 1; }
+      /* line 215, source/_sass/leave.scss */
+      .leave-footer__check .checkbox {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        color: #222;
+        font-size: 14px;
+        word-break: break-all; }
+        /* line 223, source/_sass/leave.scss */
+        .leave-footer__check .checkbox input[type=checkbox] {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+          appearance: checkbox;
+          -webkit-appearance: checkbox; }
+          /* line 229, source/_sass/leave.scss */
+          .leave-footer__check .checkbox input[type=checkbox]:checked + span {
+            background-color: #00c3c3; }
+          /* line 232, source/_sass/leave.scss */
+          .leave-footer__check .checkbox input[type=checkbox]:checked + span:after {
+            width: 100%;
+            height: 100%;
+            content: "";
+            top: 50%;
+            left: 50%;
+            margin-left: -5px;
+            margin-top: -12px;
+            width: 9px;
+            height: 16px;
+            border-width: 0 3px 3px 0 !important;
+            transform: rotate(45deg);
+            position: absolute;
+            border: solid #fff; }
+        /* line 248, source/_sass/leave.scss */
+        .leave-footer__check .checkbox span {
+          width: 36px;
+          min-width: 36px;
+          height: 36px;
+          box-sizing: border-box;
+          border-radius: 10px;
+          background: 0 0;
+          position: relative;
+          display: inline-block;
+          margin-right: 10px;
+          background-color: #ccc; }
+  /* line 263, source/_sass/leave.scss */
+  .leave-submit {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 1;
+    font-size: 18px;
+    font-family: 'Noto Sans Japanese';
+    background: -webkit-linear-gradient(20deg, #00c3c3 0, #42e4b2 100%);
+    background: -o-linear-gradient(20deg, #00c3c3 0, #42e4b2 100%);
+    background: -ms-linear-gradient(20deg, #00c3c3 0, #42e4b2 100%);
+    background: linear-gradient(20deg, #00c3c3 0, #42e4b2 100%); }
+    /* line 280, source/_sass/leave.scss */
+    .leave-submit:disabled {
+      background-image: linear-gradient(-162deg, #ccc 0, #ccc 100%) !important; }
+
+/* line 290, source/_sass/leave.scss */
+.modal_overlay {
+  align-items: center; }
+  /* line 292, source/_sass/leave.scss */
+  .modal_overlay.active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity .5s; }
+
+/* line 299, source/_sass/leave.scss */
+.modal-leave {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px; }
+  /* line 308, source/_sass/leave.scss */
+  .modal-leave__top {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px #cccccc solid; }
+  /* line 315, source/_sass/leave.scss */
+  .modal-leave__title {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    font-family: 'Noto Sans Japanese';
+    color: #d0021b;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold; }
+  /* line 326, source/_sass/leave.scss */
+  .modal-leave__text {
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    font-family: 'Noto Sans Japanese';
+    color: #505050;
+    text-align: center; }
+  /* line 334, source/_sass/leave.scss */
+  .modal-leave__bottom {
+    width: 100%;
+    height: auto;
+    line-height: 1; }
+    /* line 338, source/_sass/leave.scss */
+    .modal-leave__bottom a {
+      display: block;
+      font-size: 15px;
+      font-family: 'Noto Sans Japanese';
+      padding: 15px 0;
+      box-sizing: border-box;
+      text-align: center;
+      line-height: 1;
+      color: #ff66bb; }
+
+/* line 360, source/_sass/leave.scss */
+.leave-done {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  /* line 370, source/_sass/leave.scss */
+  .leave-done__logo {
+    width: auto;
+    height: auto;
+    margin-bottom: 40px; }
+  /* line 375, source/_sass/leave.scss */
+  .leave-done__title {
+    font-size: 24px;
+    color: #00c3c3;
+    font-family: 'Noto Sans Japanese';
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 90px;
+    letter-spacing: -1px; }
+  /* line 386, source/_sass/leave.scss */
+  .leave-done__link a {
+    width: auto;
+    height: auto;
+    line-height: 1;
+    display: table;
+    font-size: 12px;
+    font-family: 'Noto Sans Japanese';
+    color: #00c3c3;
+    padding-bottom: 1px;
+    box-sizing: border-box;
+    border-bottom: 1px #00c3c3 solid; }
+
+/*# sourceMappingURL=../../sass */

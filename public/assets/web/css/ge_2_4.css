@@ -1,0 +1,82 @@
+header {
+  position: relative;
+}
+header h1 {
+  width: calc(100% - 20px);
+  font-size: 15px;
+  font-weight: 300;
+  color: #30CCC3;
+  text-align: center;
+}
+header .back {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+}
+
+main{
+  padding-top: 25px;
+}
+
+.ge2-4-block {
+  width: calc(100% - 40px);
+  margin: 0 0 40px;
+  padding: 0 20px;
+}
+
+.ge2-4-block h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #30CCC3;
+}
+
+.ge2-4-block p {
+  font-size: 14px;
+}
+
+.ge2-4-block a {
+  display: inline-block;
+  color: #30CCC3;
+  text-decoration: underline;
+}
+
+.ge2-4-block ul {
+  width: 100%;
+  margin: 20px 0 0;
+  background-image: linear-gradient(to right, #CCC, #CCC 5px, transparent 1px, transparent 9px);
+  background-size: 10px 1px;
+  background-position: top;
+  background-repeat: repeat-x;
+}
+
+.ge2-4-block li {
+  padding: 0 10px;
+  background-image: linear-gradient(to right, #CCC, #CCC 5px, transparent 1px, transparent 9px);
+  background-size: 10px 1px;
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+.ge2-4-block li span {
+  display: inline-block;
+  font-size: 13px;
+  width: 50%;
+  line-height: 3em;
+}
+
+.ge2-4-block li span:last-child {
+  text-align: right;
+}
+
+.form_footer {
+  width: 100%;
+  height: 60px;
+  background-image: linear-gradient(-162deg, #42E4B2 0%, #00C3C3 100%);
+  text-align: center;
+}
+
+.form_footer a {
+  font-size: 18px;
+  line-height: 60px;
+  color: #fff;
+}

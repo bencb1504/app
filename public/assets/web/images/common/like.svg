@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="23px" viewBox="0 0 27 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>`Icon/Like</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Icon/Like-after" transform="translate(1.000000, 1.000000)" fill="#30CCC3" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="0.1">
+            <path d="M24.9586772,6.56018203 C24.5937502,2.75858931 21.7507819,0.000455062571 18.1928644,0.000455062571 C15.8225221,0.000455062571 13.6521924,1.20773606 12.4309613,3.14266212 C11.2207886,1.18270762 9.13940686,0 6.80704773,0 C3.24961107,0 0.406161901,2.75813424 0.0417157611,6.55972696 C0.0128677817,6.72764505 -0.105408934,7.61137656 0.254229209,9.05255973 C0.772531239,11.1312856 1.96972238,13.0220705 3.71550594,14.5192264 L11.779169,21.4451292 C12.1514929,21.7649193 12.7008631,21.7672356 13.0758704,21.4505965 L21.2844062,14.5196815 C23.0301897,13.0220705 24.2273809,11.1317406 24.7456829,9.05255973 C25.1053211,7.61183163 24.9870443,6.72810011 24.9586772,6.56018203 Z" id="`Icon/Like"></path>
+        </g>
+    </g>
+</svg>

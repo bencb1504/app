@@ -1,0 +1,20 @@
+@import "_mixin.scss";
+$img-path:"../../images/";
+@mixin flex{
+	display: -ms-flexbox; /* IE10 */
+	display: -webkit-box; /* Android4.3以下、Safari3.1〜6.0 */
+	display: -webkit-flex; /* Safari6.1以降 */
+	display:flex;
+}
+#gg-1-1{
+	.msg-mail{
+		color:$font-glay2;
+		font-size:14px;
+		text-align:center;
+		figure{
+			margin:round-decimal(188 / 14 + 0em) auto round-decimal(20 / 14 + 0em);
+			width:13%;
+			min-width: round-decimal(50 / 14 + 0em);			
+		}
+	}
+}

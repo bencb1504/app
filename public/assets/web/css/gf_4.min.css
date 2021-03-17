@@ -1,0 +1,189 @@
+#gf4 {
+  position: relative;
+}
+
+.page-header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.page-header .prev {
+  position: absolute;
+  width: 11px;
+  height: 100%;
+  margin: 1.2em 0 0 1.5em;
+}
+
+.page-header h1 {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  color: #30CCC3;
+}
+
+#gf4 .cast-rank {
+  width: 100%;
+  margin: 10px 0 0;
+  padding: 5em 10px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#gf4 .cast-rank .first-place {
+  position: relative;
+  width: 170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#gf4 .cast-rank .first-place:before {
+  position: absolute;
+  top: -45px;
+  left: -28px;
+  display: block;
+  content: url('../images/common/rank.svg');
+  width: 48px;
+}
+
+#gf4 .cast-rank .first-place:after {
+  position: absolute;
+  bottom: 18px;
+  right: -9px;
+  display: block;
+  content: '1';
+  width: 39px;
+  height: 39px;
+  color: #fff;
+  font-family: Hiragino Sans;
+  font-size: 22px;
+  border-radius: 14px;
+  line-height: 39px;
+  background-image: linear-gradient(120deg, #DCA561 0%, #FFDB23 100%);
+}
+
+#gf4 .cast-rank .first-place figure {
+  padding: 3px;
+  background-image: linear-gradient(-120deg, #DCA561 0%, #FFDB23 100%);
+  border-radius: 10px;
+  height: 164px;
+}
+
+#gf4 .cast-rank .first-place figcaption {
+  margin: 3px 0 0;
+}
+
+#gf4 .cast-rank .first-place figcaption span {
+  font-family: Hiragino Sans;
+  font-size: 14px;
+  color: #222;
+}
+
+#gf4 .cast-rank .second_third {
+  display: flex;
+  margin: 20px 0 0;
+}
+.cast-rank .second_third .second,
+.cast-rank .second_third .third {
+  position: relative;
+  max-width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#gf4 .cast-rank .second_third .second::after {
+  position: absolute;
+  bottom: 18px;
+  right: -5px;
+  display: block;
+  content: '2';
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-family: Hiragino Sans;
+  font-size: 18px;
+  border-radius: 10px;
+  line-height: 30px;
+  background-image: linear-gradient(133deg, #E2E2E2 0%, #9D9D9D 100%);
+}
+
+#gf4 .cast-rank .second_third .second figure {
+  padding: 3px;
+  background-image: linear-gradient(133deg, #E2E2E2 0%, #9D9D9D 100%);
+  border-radius: 7px;
+}
+
+#gf4 .cast-rank .second_third .third::after {
+  position: absolute;
+  bottom: 18px;
+  right: -5px;
+  display: block;
+  content: '3';
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-family: Hiragino Sans;
+  font-size: 18px;
+  border-radius: 10px;
+  line-height: 30px;
+  background-image: linear-gradient(134deg, #C4A8A8 0%, #8B6F6F 100%);
+}
+
+#gf4 .cast-rank .second_third .third figure {
+  padding: 3px;
+  background-image: linear-gradient(134deg, #C4A8A8 0%, #8B6F6F 100%);
+  border-radius: 7px;
+}
+
+#gf4 .cast-rank .second_third .second figcaption,
+#gf4 .cast-rank .second_third .third figcaption {
+  margin: 3px 0 0;
+}
+
+#gf4 .cast-rank .second_third .second figcaption span,
+#gf4 .cast-rank .second_third .third figcaption span {
+  font-family: Hiragino Sans;
+  font-size: 12px;
+  color: #222;
+}
+
+#gf4 .cast-rank .later {
+  margin: 30px 0 0;
+  border-top: solid 1px #F3F2F2;
+}
+
+#gf4 .cast-rank .later li {
+  line-height: 65px;
+  border-bottom: solid 1px #F3F2F2;
+}
+
+#gf4 .cast-rank .later li .num {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #222;
+  background-color: #F6F6F6;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+#gf4 .cast-rank .later li img {
+  display: inline-block;
+  width: 40px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+#gf4 .cast-rank .later li .name,
+#gf4 .cast-rank .later li .age {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  color: #222;
+  line-height: 70px;
+}

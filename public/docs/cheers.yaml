@@ -1,0 +1,29 @@
+swagger: '2.0'
+info:
+  description: >-
+    This is Cheers server.
+  version: 1.3.0
+  title: Cheers
+host: app.dev.cheers.style
+basePath: /api/v1
+tags:
+  - name: Common
+    description: End point used for bolth Guest/Cast
+  - name: Guest
+    description: End point used for Guest
+  - name: Cast
+    description: End point used for Cast
+schemes:
+  - http
+paths:
+  /auth/facebook:
+    $ref: ./api/common/login.yaml
+  /auth/logout:
+    $ref: ./api/common/logout.yaml
+  /auth/refresh:
+    $ref: ./api/common/refresh.yaml
+securityDefinitions:
+  CheersAuth:
+    type: apiKey
+    name: Authorization
+    in: header

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="131" height="131" viewBox="0 0 131 131">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.999" y1="2.623" x2="-0.282" y2="-0.759" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#78ffa4"/>
+      <stop offset="1" stop-color="#13b7d0"/>
+    </linearGradient>
+    <filter id="Oval_2_Copy" x="0" y="0" width="131" height="131" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.18"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ化_105" data-name="グループ化 105" transform="translate(12.5 10.5)">
+    <g transform="matrix(1, 0, 0, 1, -12.5, -10.5)" filter="url(#Oval_2_Copy)">
+      <circle id="Oval_2_Copy-2" data-name="Oval 2 Copy" cx="50" cy="50" r="50" transform="translate(12.5 10.5)" stroke="#31ccc2" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Icon_pencil_1" data-name="Icon/pencil 1" transform="translate(31.24 28.919)">
+      <rect id="Icon_pencil_1_background" data-name="Icon/pencil 1 background" width="40.011" height="40.011" fill="rgba(0,0,0,0)"/>
+      <g id="edit" transform="translate(0.001 0)">
+        <path id="Shape" d="M1.145,40.01a1.152,1.152,0,0,1-1.134-1.3l1.7-12.567a1.147,1.147,0,0,1,.324-.656l22.9-22.892a8.835,8.835,0,0,1,15.08,6.241,8.781,8.781,0,0,1-2.591,6.249l-22.9,22.892a1.121,1.121,0,0,1-.809.342,1.151,1.151,0,0,1-.81-.342L3.676,28.747,2.49,37.512l6.071-.818a1.22,1.22,0,0,1,.155-.01,1.155,1.155,0,0,1,1.139,1,1.133,1.133,0,0,1-.224.851,1.144,1.144,0,0,1-.764.445L1.3,40A.954.954,0,0,1,1.145,40.01Zm29.71-29.133h0l-20.9,20.9,3.76,3.76,20.9-20.9-3.76-3.761ZM25.373,5.4h0L4.478,26.3l3.845,3.846,20.9-20.9L25.373,5.4Zm5.806-3.1a6.546,6.546,0,0,0-4.161,1.493l9.2,9.2A6.53,6.53,0,0,0,31.179,2.3Z" transform="translate(0 0)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

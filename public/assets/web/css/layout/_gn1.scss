@@ -1,0 +1,166 @@
+@charset "UTF-8";
+$img-path-common:"../images/common/";
+$img-path-gn1:"../images/gn1/";
+
+//メディクリ
+$sssmall:  "(max-width:320px)";
+$ssmall:  "(max-width:480px)";
+$small:  "(max-width:768px)";
+$middle: "(max-width:980px)";
+$large:  "(max-width:1200px)";
+$largeMax: "(min-width:1201px)";
+
+
+@media #{largeMax} {
+    //1201px以上
+}
+@media #{large} {
+    //1200px以下
+}
+@media #{middle} {
+    //980px以下
+}
+@media #{$small} {
+    //768px以下
+}
+@media #{$ssmall} {
+    //480px以下
+}
+
+.gn-1 {
+    padding-top:65px;
+  .list_wrap {
+    padding: 0em 1.6em;
+    .list_item {
+      border: 1px solid #30CCC3;
+      border-radius: 1.2rem;
+      margin-bottom: 1em;
+      padding: 1em 1.4em 1.5em 1.4em;
+      .item_up {
+        width: 100%;
+        padding: 0em .3em;
+        .item_left {
+          vertical-align: top;
+          display: inline-block;
+          width: 60%;
+          margin-right: 2%;
+        }
+        .item_right {
+          vertical-align: top;
+          display: inline-block;
+          width: 36%;
+          font-weight: bold;
+          font-size: 1.1em;
+          color: #111;
+          li {
+            margin: .2em 0em;
+            .icon1 {
+              background:url(#{$img-path-common}glass.svg) 3px center no-repeat;
+            }
+            .icon2 {
+                background:url(#{$img-path-common}diamond.svg) left center no-repeat;
+            }
+            .icon3 {
+                background:url(#{$img-path-common}woman.svg) left center no-repeat;
+            }
+            .icon-size-w11 {
+              display: block;
+              min-height: 10px;
+              padding-left: 24px;
+              background-size: 11px;
+            }
+            .icon-size-w17 {
+              display: block;
+              min-height: 10px;
+              padding-left: 24px;
+              background-size: 17px;
+            }
+            .icon-size-w15 {
+              display: block;
+              min-height: 10px;
+              padding-left: 24px;
+              background-size: 15px;
+            }
+          }
+        }
+        .time-text  {
+          color: #111;
+          line-height: 1.4;
+          font-size: 1.6em;
+          font-weight: 900;
+        }
+        .tag-text {
+          font-size: 1.1em;
+          line-height: 1.6;
+        }
+      }
+      .item_down {
+        .border-blue {
+          height: 2px;
+          background-image: linear-gradient(90deg, transparent, transparent 50%, #fff 50%, #fff 100%), linear-gradient(90deg, #30CCC3);
+          background-size: 13px 3px, 100% 3px;
+          border: none;
+        }
+        .face-img {
+          padding: .3em .3em; 
+          display: inline-block;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          li {
+            margin-right: .7em;
+            overflow: hidden;
+            width: 40px;
+            height: 40px;
+            img{
+              width:100%;
+              height:100%;
+              object-fit:cover;
+              border-radius:8px;
+            }
+          }
+        }
+      }
+      .btn_wrap {
+        margin-top: 1em;
+        .btn-cancel {
+          font-weight: normal;
+          width: 49%;
+          display: inline-block;
+          color: white;
+          border-radius: 30px;
+          padding: .7em 0em;
+          background: #cccccc;
+          border: 0px;
+          font-size: 1.2em;
+          @media #{$sssmall} {
+            font-size: 1em;
+          }
+        }
+        .mess-btn {
+          font-weight: normal;
+          width: 49%;
+          border-radius: 30px;
+          padding: .7em 0em;
+          display: inline-block;
+          color: white;
+          background: -webkit-linear-gradient(20deg, #00C3C3 0%, #42E4B2 100%);
+          background: -o-linear-gradient(20deg, #00C3C3 0%, #42E4B2 100%);
+          background: -ms-linear-gradient(20deg, #00C3C3 0%, #42E4B2 100%);
+          background: -webkit-linear-gradient(70deg, #00C3C3 0%, #42E4B2 100%);
+          background: -o-linear-gradient(70deg, #00C3C3 0%, #42E4B2 100%);
+          background: linear-gradient(20deg, #00C3C3 0%, #42E4B2 100%);
+          border: 0px;
+          font-size: 1.2em;
+          @media #{$sssmall} {
+            font-size: 1em;
+          }
+        }
+      }
+      
+    }
+  }
+}
+

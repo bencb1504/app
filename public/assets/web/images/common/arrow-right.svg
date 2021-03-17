@@ -1,0 +1,20 @@
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M4.28571429,11.1428571 L12,11.1428571 C12.4733869,11.1428571 12.8571429,11.5266131 12.8571429,12 C12.8571429,12.4733869 12.4733869,12.8571429 12,12.8571429 L3.42857143,12.8571429 C2.9551845,12.8571429 2.57142857,12.4733869 2.57142857,12 L2.57142857,3.42857143 C2.57142857,2.9551845 2.9551845,2.57142857 3.42857143,2.57142857 C3.90195836,2.57142857 4.28571429,2.9551845 4.28571429,3.42857143 L4.28571429,11.1428571 Z" id="path-1"></path>
+    </defs>
+    <g id="Web-SP用" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="[new-web-GE-1]TOP(マイページmypage)--" transform="translate(-344.000000, -655.000000)">
+            <g id="Buttons/Small/＋" transform="translate(344.000000, 655.000000)">
+                <g id="Large-Button" stroke="#00C3C3" stroke-width="1.5">
+                    <rect id="Rectangle" x="0.75" y="0.75" width="22.5" height="22.5" rx="11.25"></rect>
+                </g>
+                <g id="Rectangle-10" transform="translate(1.714286, 4.285714)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#00C3C3" transform="translate(7.714286, 7.714286) rotate(-135.000000) translate(-7.714286, -7.714286) " xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

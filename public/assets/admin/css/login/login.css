@@ -1,0 +1,43 @@
+.login-title-wrap {
+    text-align: center;
+}
+
+.login-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #666;
+}
+
+.text-with-hr {
+  text-align: center;
+  position: relative;
+  color: #666;
+  font-size: 27px;
+  margin-bottom: 25px;
+}
+
+.text-with-hr:before {
+	display: none;
+}
+
+.btn-primary {
+	background: #006FC7;
+	border-color: #006FC7;
+	margin-top: 15px;
+}
+
+.form-control {
+	border: 1px solid #0000006e;
+}
+
+.form-control:focus {
+	border-color: #00B0E7;
+}
+
+.login-box {
+  margin: 14% auto;
+}
+
+.confirm label {
+  cursor: pointer;
+}

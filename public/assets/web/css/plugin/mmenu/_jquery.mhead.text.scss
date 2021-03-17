@@ -1,0 +1,37 @@
+/*
+	jQuery.mhead text CSS
+*/
+
+
+.mh-head
+{
+
+	.mh-text
+	{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		line-height: $mh_btnSize - ( $mh_padding * 2 );
+		display: block;
+		padding: $mh_padding;
+		.logo {
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			left: -1.6em;
+		}
+		.logo-image {
+			width: 100px;
+		}
+	}
+	&.mh-align-left .mh-text
+	{
+		text-align: center;
+	}
+	&.mh-align-right .mh-text
+	{
+		text-align: right;
+	}
+
+}

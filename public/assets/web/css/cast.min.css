@@ -1,0 +1,217 @@
+.cast-list {
+  position: relative;
+  padding: 0 15px;
+  width: calc(100% - 30px);
+}
+
+.cast-list h2 {
+  margin: 0 0 8px;
+  color: #30CCC3;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cast-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cast-head .head-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.cast-body {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.cast-item {
+  width: 160px;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.cast-item .tag {
+  background-image: linear-gradient(35deg, #32EABF 0%, #00BBD7 100%);
+  font-family: HiraginoSans-W3;
+  font-size: 11px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  width: 80px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 100px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.cast-item .info {
+  border-radius: 5px;
+  padding: 5px 4px;
+  position: absolute;
+  bottom: 0px;
+  background: rgba(255,255,255,0.40);
+  border: 1px solid #E7E7E7;
+  font-family: Helvetica;
+  font-size: 10px;
+  color: #222222;
+  letter-spacing: 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  height: 45px;
+  width:94%;
+}
+
+/*.cast-item .info::before, .cast-item .info::after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.cast-item .info::before {
+  border-color: rgba(231, 231, 231, 0);
+  border-bottom-color: rgba(255,255,255,0.40);
+  border-width: 11px;
+  margin-left: -11px;
+}
+
+.cast-item .info::after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255,255,255,0.40);
+  border-width: 10px;
+  margin-left: -10px;
+}
+*/
+.cast-item .info .tick {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.info .tick.tick-online {
+  background-color: #99DD33;
+}
+
+.info .tick.tick-offline {
+  background-color: #b3abab;
+}
+
+.info #title-info {
+  font-family: HiraginoSans-W3;
+  font-size: 12px;
+  color: #222222;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-top: 3px;
+  font-weight: bold;
+
+}
+
+.info .description {
+  font-family: Helvetica;
+  font-size: 10px;
+  color: #222222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.select-hour-offer {
+  background-image: none !important;
+}
+
+.cast-item.import {
+  background-color: #F3F2F2;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  border: 1px solid #CCCCCC;
+}
+
+.cast-item.import::before {
+  content: "もっとみる";
+  position: absolute;
+  background-image: url('../images/common/girl.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 62px;
+  height: 50px;
+  top: calc(50% - 50px);
+  bottom: 0;
+  padding-top: 44px;
+  color: #cec7c7;
+  right: 35px;
+  font-weight: bold;
+}
+
+.cast-item.import::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/common/plus-circle.svg");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  top: 102px;
+  left: 40px;
+}
+
+.cast-ok {
+    top: 3px;
+    right: 3px;
+    display: block;
+    width: 50px;
+    background: rgba(34,34,34,0.40) !important;
+    font-weight: bold;
+    font-size: 11px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    position: absolute;
+}
+
+.cast-item-offer {
+  width: 44% !important;
+}
+
+.two-item {
+  width: 48% !important;
+}
+
+.img-offer img{
+  border-radius: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.bt-offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  border: none;
+}

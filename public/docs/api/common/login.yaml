@@ -1,0 +1,44 @@
+post:
+  tags:
+    - Common
+  summary: Logs user into the app using facebook token
+  description: ''
+  operationId: loginUser
+  consumes:
+    - multipart/form-data
+  parameters:
+    - name: access_token
+      in: formData
+      description: Token
+      required: true
+      type: string
+  responses:
+    200:
+      description: Successful Operation
+      schema:
+        type: object
+        properties:
+          status:
+            type: boolean
+          data:
+            type: object
+            properties:
+              access_token:
+                type: string
+              token_type:
+                type: string
+              expires_in:
+                type: integer
+    400:
+      description: Validation Error
+      examples:
+        Form validate failed: {
+          status: false,
+          error: {
+            access_token: access tokenは、必ず指定してください。
+          }
+        }
+        Invalid token: {
+          status: false,
+          error: トークンは無効です
+        }

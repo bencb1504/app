@@ -1,0 +1,377 @@
+.top-header {
+  width: 100%;
+  height: 160px;
+  margin: 0 0 70px;
+  background-image: linear-gradient(-162deg, #42E4B2 0%, #00C3C3 100%);
+  /* border-bottom-right-radius: 100% 60px; */
+  border-radius: 0 0 2000px 2000px / 0 0 500px 500px;
+}
+
+.user-data {
+  position: relative;
+  width: 100px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.user-icon {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 100px;
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.user-icon img{
+  object-fit: cover;
+}
+
+.edit-button {
+  position: absolute;
+  bottom: -33px;
+  left: auto;
+  right: -6px;
+  display: block;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+
+.user-name {
+  display: block;
+  margin: 30px auto 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.cast-call {
+  display: block;
+  width: 320px;
+  height: 75px;
+  margin: 15px auto;
+  padding: 15px 0 0;
+  background-image: linear-gradient(-162deg, #42E4B2 0%, #00C3C3 100%);
+  border-radius: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+.cast-call span {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.booking,
+.cast-list {
+  position: relative;
+  margin: 15px 0 0;
+  padding: 0 15px;
+  width: calc(100% - 30px);
+}
+
+.booking h2,
+.cast-list h2 {
+  margin: 0 0 8px;
+  color: #30CCC3;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.booking-block {
+  padding: 10px 20px;
+  border: solid 3px #E7E7E7;
+  border-radius: 20px;
+}
+
+.booking-date {
+  position: relative;
+  font-weight: 600;
+  padding: 0 0 10px;
+  background-image: linear-gradient(to right, #CCC, #CCC 5px, transparent 1px, transparent 9px);
+  background-size: 10px 1px;
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+.booking-date .date-left span {
+  display: block;
+  font-size: 16px;
+}
+
+.booking-date .date-left ul {
+  display: block;
+}
+
+.booking-date .date-left li {
+  display: inline-block;
+  font-weight: normal;
+}
+
+.booking-date .date-right {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 35%;
+}
+
+.booking-date .date-right li img {
+  display: inline-block;
+  max-width: 30px;
+  max-height: 14px;
+}
+.booking-date .date-right li span {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.booking-block .casts {
+  margin: 10px 0 0;
+}
+
+.booking-block .casts img{
+  object-fit: cover;
+}
+
+.booking-block .casts li {
+  display: inline-block;
+  max-width: 40px;
+  max-height: 40px;
+  margin: 0 4px;
+}
+
+.booking-block .cast-message {
+  width: 100%;
+  margin: 8px 0;
+  font-weight: 300;
+}
+
+.booking-block .cast-message a {
+  display: block;
+}
+
+.date-left {
+  max-width: 170px;
+}
+
+@media screen and (max-width: 350px) {
+  .booking-date .date-right {
+    max-width: 112px;
+    width: 46%;
+  }
+}
+
+.cast-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cast-head .head-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.cast-body {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.cast-item {
+  width: 160px;
+  height: 216px;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.cast-item .tag {
+  background-image: linear-gradient(35deg, #32EABF 0%, #00BBD7 100%);
+  font-family: HiraginoSans-W3;
+  font-size: 11px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  width: 80px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 100px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.cast-item .info {
+  border-radius: 5px;
+  padding: 5px 4px;
+  position: absolute;
+  bottom: 0px;
+  background: rgba(255,255,255,0.40);
+  border: 1px solid #E7E7E7;
+  font-family: Helvetica;
+  font-size: 10px;
+  color: #222222;
+  letter-spacing: 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  height: 45px;
+  width:94%;
+}
+
+.cast-item .info::before, .cast-item .info::after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.cast-item .info::before {
+  border-color: rgba(231, 231, 231, 0);
+  border-bottom-color: rgba(255,255,255,0.40);
+  border-width: 11px;
+  margin-left: -11px;
+}
+
+.cast-item .info::after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255,255,255,0.40);
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+.cast-item .info .tick {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.info .tick.tick-online {
+  background-color: #99DD33;
+}
+
+.info .tick.tick-offline {
+  background-color: #b3abab;
+}
+
+.info .title-info {
+  font-family: HiraginoSans-W3;
+  font-size: 12px;
+  color: #222222;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.info .description {
+  font-family: Helvetica;
+  font-size: 10px;
+  color: #222222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cast-item.import {
+  background-color: #F3F2F2;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  border: 1px solid #CCCCCC;
+}
+
+.cast-item.import::before {
+  content: "もっとみる";
+  position: absolute;
+  background-image: url('../images/common/girl.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 62px;
+  height: 50px;
+  top: calc(50% - 50px);
+  bottom: 0;
+  padding-top: 44px;
+  color: #cec7c7;
+  right: 35px;
+  font-weight: bold;
+}
+
+.cast-item.import::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/common/plus-circle.svg");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  top: 102px;
+  left: 40px;
+}
+
+.timeline {
+  padding: 0 15px;
+  margin-top: 10px;
+}
+
+.timeline .tl-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tl-head h2 {
+  margin: 0 0 8px;
+  color: #30CCC3;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tl-list .tl-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tl-list .tl-item:last-child {
+  margin-bottom: 0;
+}
+
+.tl-item .tl-item_avatar {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tl-item .tl-item_avatar img {
+  border-radius: 50%;
+}
+
+.tl-item .tl-item_info {
+  border: 1px solid #F3F2F2;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width:130%;
+}
+
+.tl-item_info .info-title {
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.tl-item_info .info-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,204 @@
+html, body {
+  min-height: 935px;
+}
+
+.header-webview {
+  padding: 8px;
+  margin: 0 !important;
+}
+
+.header-webview .title-main {
+  margin-left: -32px;
+}
+
+#gl1 .border-bottom {
+  border-bottom: none;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.header-webview .title-main {
+  margin-top: 11px;
+}
+
+.hide-content {
+  display: none;
+}
+
+.image-main {
+  margin: 20px 0;
+}
+
+.image-main p {
+  margin: 0 auto;
+  height: 18px;
+  font-family: NotoSansCJKjp;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #505050;
+}
+
+.image-main img {
+  width: 212px;
+  height: auto;
+  padding-top: 0;
+  margin: 25px auto 5px;
+}
+
+.image-main p {
+  margin-top: 5px;
+}
+
+#gl1 .card-number {
+  margin-top: 10px;
+}
+
+.tc-form .card-outside {
+  margin-top: 18px;
+  margin-right: 8px;
+}
+
+.tc-form .number input {
+  padding: 0;
+  position: relative;
+  font-family: NotoSansCJKjp;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: right;
+  color: #c8c8c8;
+  right: 0;
+}
+
+.tc-form input {
+  color: #222222 !important;
+}
+
+.tc-form .expiration-date {
+  height: 40px;
+  margin-top: 10px !important;
+}
+
+.tc-form .date-select {
+  padding: 0;
+  margin-right: 8px;
+}
+
+.tc-form .date-select select {
+  font-family: NotoSansCJKjp;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: right;
+  color: #222222;
+}
+
+.tc-form .date-select select:required:invalid {
+  color: #c8c8c8;
+}
+
+.date-select select#month-select {
+  padding-left: 6px;
+}
+
+.date-select select#year-select {
+  width: 70px;
+  background-position: 58px 11px;
+}
+
+.security-code img {
+  width: 45px;
+}
+
+.security-code .security-code-outside {
+  margin-right: 8px;
+  width: 100%;
+}
+
+.security-code .security-code-outside #cvv-field {
+  margin-right: 8px;
+  text-align: right;
+  width: 200px;
+}
+
+.security-code .security-code-outside #cvv-field input {
+  margin-right: 10px;
+  float: right;
+}
+
+.security-code input {
+  width: auto;
+  font-family: NotoSansCJKjp;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: right;
+  color: #c8c8c8;
+  margin-right: 17px;
+}
+
+.tc-form button {
+  font-family: NotoSansCJKjp;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+}
+
+.sub-title {
+  height: 42px !important;
+}
+
+.sub-title.secondary {
+  margin-top: 20px !important;
+  height: 30px !important;
+  padding: 2px 0;
+}
+
+.sub-title.secondary p {
+  padding-top: 6px !important;
+}
+
+.tc-notice {
+  padding: 5px 0 5px 8px;
+}
+
+.tc-notice .sub-title.secondary {
+  margin: 8px 8px 8px 0 !important;
+}
+
+.tc-notice p {
+  font-family: NotoSansCJKjp;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #505050;
+}
+
+.tc-notice p a {
+  display: inline;
+  color: #30CCC3;
+  text-decoration: underline;
+}

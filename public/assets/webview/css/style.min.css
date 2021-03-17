@@ -1,0 +1,362 @@
+@import "normalize.css";
+@font-face {
+    font-family: NotoSansCJKjp;
+    src: url("./fonts/noto-regular.ttf");
+}
+
+.left{
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #cccccc;
+  margin: 0 8px;
+}
+
+.clear {
+  clear: both;
+}
+
+input {
+  height: 15px;
+  font-family: NotoSansCJKjp;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: right;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/*header*/
+
+header {
+  object-fit: contain;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.header-item {
+
+}
+
+header .btn-back {
+  display: inline-block;
+  width: 11px;
+  height: 18px;
+  position: absolute;
+  left: 19px;
+}
+
+header .title-main {
+  display: inline-block;
+  font-family: NotoSansCJKjp;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #30ccc3;
+}
+
+header .btn-register {
+  display: inline-block;
+  width: 37px;
+  height: 27px;
+  font-family: NotoSansCJKjp;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: absolute;
+  bottom: 0;
+  right: 18px;
+}
+
+.btn-register a {
+  text-decoration: none;
+  color: #cccccc;
+  cursor: pointer;
+}
+
+/*image title main*/
+.image-main {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.image-main img {
+  height: 46px;
+}
+
+/*content*/
+.sub-title {
+  height: 45px;
+  background-color: #f3f2f2;
+  margin: 0 8px;
+}
+
+.sub-title p {
+  font-family: NotoSansCJKjp;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #505050;
+  padding-top: 14px;
+  padding-left: 11px;
+}
+
+/*card number*/
+
+.color-show-page {
+  color: #000 !important;
+}
+.card-number {
+  height: 50px;
+  background-color: #ffffff;
+  padding: 0 18px;
+  position: relative;
+}
+
+.card-number span{
+  height: 15px;
+  font-family: NotoSansCJKjp;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #30ccc3;
+  padding-top: 18px;
+}
+
+.number input{
+  padding-top: 25px;
+  position: absolute;
+  top: -2px;
+  right: 12px;
+  z-index: 1;
+  caret-color: #ff6090;
+  height: 40px;
+}
+
+#number-card-display {
+  position: absolute;
+  right: 20px;
+  color: #c8c8c8;
+  font-size: 14px;
+  top: 2.3px;
+}
+
+.old-card {
+  color: #ff6090 !important;
+}
+
+.color {
+  color: #ff6090 !important;
+}
+
+.color-placeholder {
+  color: #c8c8c8!important;
+}
+
+.number-true{
+  color: #303030 !important;
+}
+
+.number-false{
+  color: #ff6090 !important;
+}
+
+.number input::placeholder{
+  color: #c8c8c8;
+  padding-top: 35px;
+}
+
+#error {
+  display: none;
+}
+
+.card-number span.error {
+  display: inline-block !important;
+  height: 18px;
+  font-family: NotoSansCJKjp;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ff6090;
+  position: absolute;
+  top: -17px;
+  right: 20px;
+}
+
+/*expiration date*/
+.expiration-date {
+  height: 60px;
+  padding: 0 15px 0 20px;
+  background-color: #ffffff;
+}
+
+.expiration-date span {
+  height: 15px;
+  font-family: NotoSansCJKjp;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #30ccc3;
+  padding-top: 15px;
+}
+
+.date-select {
+  padding-top: 20px;
+}
+
+.date-select select{
+  height: 21px;
+  font-family: NotoSansCJKjp;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: right;
+  color: #303030;
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  width: 60px;
+  background-image: url("../images/IC_down.png");
+  background-repeat: no-repeat, repeat;
+  background-position: 50px 11px;
+  margin-left: 5px;
+}
+
+.date-select select:first-child{
+  padding-left: 15px;
+}
+
+/*security code*/
+.security-code {
+  height: 50px;
+  background-color: #ffffff;
+  padding-top: 20px;
+  position: relative;
+}
+
+.security-code img{
+  padding-left: 20px;
+}
+
+.security-code input{
+  width: 52.8%;
+  color: #ff6090;
+  background: none;
+  border: none;
+  margin-right: 20px;
+  letter-spacing: 1px;
+  height: 30px;
+}
+
+.security-code input::placeholder{
+  font-family: NotoSansCJKjp;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: right;
+  color: #c8c8c8;
+  background: none;
+  border: none;
+  margin-right: 20px;
+}
+
+.btn-stop-create-card {
+  color: rgb(204, 204, 204);
+}
+
+.card-cvv-color {
+  color: #ff6090;
+}
+
+.notify {
+  height: 40px;
+  margin: 0 8px;
+  position: absolute;
+  top: 185px;
+}
+
+.notify-webview {
+  height: 40px;
+  margin: 0 8px;
+  position: absolute;
+  top: 145px;
+}
+
+.notify span {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.notify-webview span {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.btn-redirect-edit {
+  color: #ff6090 !important;
+}
+
+.hidden-text {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .number input{
+    padding-top: 25px;
+  }
+
+  .security-code input {
+    padding-top: 15px;
+  }
+
+  .card-number span.error {
+    top: -15px;
+  }
+}
+

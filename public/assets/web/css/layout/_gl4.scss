@@ -1,0 +1,83 @@
+@import "_mixin.scss";
+$img-path-gl4:"../images/gl4/";
+#gl4{
+	.list_wrap{
+		margin:25px 10px 0;
+	}
+	.list_item{
+		padding:10px 0;		
+		border-bottom:1px solid #F3F2F2;		
+		@include flex;
+		justify-content:space-between;
+	}	
+	.current_point{
+		background-image: linear-gradient(61deg, #FFDB23 0%, #DCA561 100%);
+		border-radius: 10px;
+		margin:0 auto round-decimal(20 / 12 + 0em);
+		width:51%;
+		h2{
+			color:white;
+			font-size:13px;
+			font-weight:bold;
+		}
+		.point_inner{
+			padding:round-decimal(15 / 12 + 0em);
+		}
+		.point-border{
+			border:1px solid white;
+			width:84%;
+		}
+		.current_point-box{
+			@include flex;
+			justify-content:space-between;
+			figure{
+				width:round-decimal( 30 / 13 + 0em);
+				height:auto;
+			}
+			p{
+				color:white;
+				font-size:22px;
+				margin:auto 0;
+				&::after{
+					content:"P";
+				}
+			}
+		}
+	}
+	.list_item{
+		padding:10px round-decimal(16 / 12 + 0em);
+		&:first-child{
+			border-top:1px solid #F3F2F2;			
+		}
+	}	
+	.item_left{
+		margin:auto 0;
+		.point_amount{
+			color:$font-black;
+			font-size:20px;
+			font-weight:600;
+			margin:auto 0;
+			&:before{
+				content:"";
+				display:inline-block;
+				margin-right:10px;
+				width:round-decimal(25 / 20 + 0em);	
+				height:round-decimal(30 / 20 + 0em);	
+				background:url(#{$img-path-gl4}coin-blue.svg) no-repeat center center;
+				vertical-align: top;
+			}
+		}		
+	}
+	.item_right{
+			.btn-bg{
+				text-align:center;
+				width:round-decimal(140 / 16 + 0em);
+				height:3.07em;
+				line-height:3.17em;
+				padding:0;
+				&:before{
+					content:"¥";
+				}
+			}
+	}
+}

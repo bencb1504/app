@@ -1,0 +1,550 @@
+@charset "UTF-8";
+/* line 3, source/_sass/timeline.scss */
+.timeline {
+  width: 100%;
+  height: auto; }
+  /* line 6, source/_sass/timeline.scss */
+  .timeline .portlet-header {
+    padding: 0 7px;
+    box-sizing: border-box; }
+  /* line 10, source/_sass/timeline.scss */
+  .timeline .portlet-content--timeline {
+    margin-top: 15px;
+    width: 100%; }
+  /* line 15, source/_sass/timeline.scss */
+  .timeline-list {
+    width: 100%;
+    height: auto; }
+    /* line 18, source/_sass/timeline.scss */
+    .timeline-list:last-child {
+      border-bottom: 0;
+      margin-bottom: 0; }
+  /* line 24, source/_sass/timeline.scss */
+  .timeline-item {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px #e9e5e7 solid;
+    box-sizing: border-box;
+    margin-bottom: 15px; }
+    /* line 31, source/_sass/timeline.scss */
+    .timeline-item:last-child {
+      border-bottom: 0;
+      margin-bottom: 0; }
+  /* line 36, source/_sass/timeline.scss */
+  .timeline-more {
+    width: 100%;
+    height: 40px;
+    border-top: 1px #E9E5E7 solid;
+    border-bottom: 1px #E9E5E7 solid;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F2F2; }
+    /* line 47, source/_sass/timeline.scss */
+    .timeline-more p {
+      width: auto;
+      height: auto;
+      line-height: 1;
+      outline: none;
+      background: url(../images/common/icon-arrow-right001.svg) right 2px no-repeat;
+      font-size: 13px;
+      color: #00C3C3;
+      text-indent: -20px;
+      font-family: 'Noto Sans Japanese';
+      padding-right: 25px;
+      box-sizing: border-box; }
+  /* line 63, source/_sass/timeline.scss */
+  .timeline .user-info {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0 12px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    align-items: center; }
+    /* line 73, source/_sass/timeline.scss */
+    .timeline .user-info__profile {
+      width: 36px;
+      height: 36px;
+      margin-right: 5px; }
+    /* line 78, source/_sass/timeline.scss */
+    .timeline .user-info__text {
+      width: auto;
+      height: auto;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column; }
+    /* line 88, source/_sass/timeline.scss */
+    .timeline .user-info__del {
+      width: 15px;
+      height: 15px;
+      margin-left: auto; }
+      /* line 92, source/_sass/timeline.scss */
+      .timeline .user-info__del button {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        background: none;
+        outline: none; }
+        /* line 99, source/_sass/timeline.scss */
+        .timeline .user-info__del button img {
+          width: 100%;
+          height: 100%; }
+    /* line 105, source/_sass/timeline.scss */
+    .timeline .user-info__top {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      /* line 111, source/_sass/timeline.scss */
+      .timeline .user-info__top p {
+        font-family: 'Noto Sans Japanese';
+        font-size: 13px;
+        line-height: 1;
+        white-space: nowrap;
+        font-weight: bold; }
+        /* line 117, source/_sass/timeline.scss */
+        .timeline .user-info__top p:last-child {
+          margin-left: 5px; }
+    /* line 122, source/_sass/timeline.scss */
+    .timeline .user-info__bottom {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 5px; }
+      /* line 129, source/_sass/timeline.scss */
+      .timeline .user-info__bottom p {
+        font-family: 'Noto Sans Japanese';
+        font-size: 11px;
+        line-height: 1;
+        white-space: nowrap;
+        color: #9d9d9d;
+        min-height: 10px; }
+        /* line 137, source/_sass/timeline.scss */
+        /*.timeline .user-info__bottom p:nth-child(2):before {
+          content: "・"; }*/
+  /* line 148, source/_sass/timeline.scss */
+  .timeline-content {
+    width: 100%;
+    height: auto;
+    line-height: 1;
+    padding: 0 25px;
+    box-sizing: border-box; }
+  /* line 155, source/_sass/timeline.scss */
+  .timeline-article {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; }
+    /* line 159, source/_sass/timeline.scss */
+    .timeline-article__text {
+      font-family: 'Noto Sans Japanese';
+      font-size: 14px;
+      line-height: 1.5; }
+  /* line 166, source/_sass/timeline.scss */
+  .timeline-images {
+    width: 100%;
+    height: auto; }
+    /* line 169, source/_sass/timeline.scss */
+    .timeline-images__list {
+      width: 100%;
+      height: auto; }
+    /* line 173, source/_sass/timeline.scss */
+    .timeline-images__item {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px; }
+  /* line 180, source/_sass/timeline.scss */
+  .timeline-like {
+    width: auto;
+    height: auto;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    justify-content: flex-start; }
+    /* line 187, source/_sass/timeline.scss */
+    .timeline-like__icon {
+      width: 15px;
+      height: 13px;
+      display: inline-block;
+      padding: 0;
+      box-sizing: border-box;
+      background: none;
+      outline: none;
+      margin-right: 8px; }
+      /* line 198, source/_sass/timeline.scss */
+      .timeline-like__icon--clicked svg path {
+        fill: #30ccc3; }
+      /* line 204, source/_sass/timeline.scss */
+      .timeline-like__icon svg {
+        width: 100%;
+        height: 100%; }
+    /* line 209, source/_sass/timeline.scss */
+    .timeline-like__sum {
+      font-family: 'Noto Sans Japanese';
+      font-size: 12px;
+      line-height: 1;
+      color: #6f7579; }
+  /* line 217, source/_sass/timeline.scss */
+  .timeline-button {
+    width: auto;
+    height: auto;
+    display: table;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    border-radius: 50px; }
+    /* line 226, source/_sass/timeline.scss */
+    .timeline-button__edit {
+      width: 70px;
+      height: 70px;
+      padding: 0;
+      box-sizing: border-box;
+      background: none;
+      outline: none; }
+
+/* line 238, source/_sass/timeline.scss */
+.timeline-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0; }
+
+/* line 250, source/_sass/timeline.scss */
+.timeline-like-list {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-top: 30px; }
+  /* line 256, source/_sass/timeline.scss */
+  .timeline-like-list__head {
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px; }
+  /* line 268, source/_sass/timeline.scss */
+  .timeline-like-list__content {
+    width: 100%;
+    height: auto; }
+
+/* line 274, source/_sass/timeline.scss */
+.timeline-like-item {
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px #e9e5e7 solid;
+  box-sizing: border-box;
+  padding: 10px; }
+  /* line 285, source/_sass/timeline.scss */
+  .timeline-like-item__profile {
+    width: 43px;
+    height: 43px; }
+  /* line 290, source/_sass/timeline.scss */
+  .timeline-like-item__info {
+    width: auto;
+    height: auto;
+    font-family: 'Noto Sans Japanese';
+    font-size: 12px;
+    line-height: 1;
+    font-weight: bold;
+    color: #222;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 13px;
+    margin-right: auto; }
+    /* line 306, source/_sass/timeline.scss */
+    .timeline-like-item__info p:last-child {
+      margin-left: 5px; }
+  /* line 311, source/_sass/timeline.scss */
+  .timeline-like-item__chat {
+    width: 25px;
+    height: 25px; }
+
+/* line 321, source/_sass/timeline.scss */
+.timeline {
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column; }
+  /* line 328, source/_sass/timeline.scss */
+  .timeline-message {
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    flex: 1; }
+    /* line 337, source/_sass/timeline.scss */
+    .timeline-message__header {
+      width: 100%;
+      height: auto;
+      padding: 0 8px;
+      box-sizing: border-box; }
+    /* line 343, source/_sass/timeline.scss */
+    .timeline-message__content {
+      width: 100%;
+      padding: 0 18px;
+      box-sizing: border-box;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      flex: 1; }
+  /* line 354, source/_sass/timeline.scss */
+  .timeline-edit {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    flex: 1; }
+    /* line 361, source/_sass/timeline.scss */
+    .timeline-edit__area {
+      width: 100%;
+      font-family: 'Noto Sans Japanese';
+      font-size: 15px;
+      line-height: 1.5;
+      color: #222;
+      outline: none;
+      overflow-y: scroll;
+      flex: 1; }
+    /* line 371, source/_sass/timeline.scss */
+    .timeline-edit-image {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      position: relative; }
+      /* line 377, source/_sass/timeline.scss */
+      .timeline-edit-image img {
+        max-width: 100%;
+        width: auto;
+        height: auto; }
+      /* line 382, source/_sass/timeline.scss */
+      .timeline-edit-image__del {
+        position: absolute;
+        top: 9px;
+        right: 9px;
+        width: 28px;
+        height: 28px;
+        outline: none;
+        border-radius: 30px; }
+    /* line 393, source/_sass/timeline.scss */
+    .timeline-edit__input {
+      width: 100%;
+      height: auto;
+      padding: 10px 23px;
+      box-sizing: border-box;
+      border-top: 1px #6f7579 solid;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+      /* line 404, source/_sass/timeline.scss */
+      .timeline-edit__input form {
+        width: 100%;
+        height: auto; }
+    /* line 410, source/_sass/timeline.scss */
+    .timeline-edit-pic {
+      width: 22px;
+      height: 22px;
+      display: inline-block; }
+      /* line 414, source/_sass/timeline.scss */
+      .timeline-edit-pic img {
+        width: 100%;
+        height: 100%; }
+    /* line 419, source/_sass/timeline.scss */
+    .timeline-edit-camera {
+      width: 25px;
+      height: 22px;
+      display: inline-block;
+      margin-left: 15px; }
+      /* line 424, source/_sass/timeline.scss */
+      .timeline-edit-camera img {
+        width: 100%;
+        height: 100%; }
+    /* line 430, source/_sass/timeline.scss */
+    .timeline-edit-position {
+      width: 22px;
+      height: 24px;
+      display: inline-block;
+      margin-left: 15px; }
+      /* line 435, source/_sass/timeline.scss */
+      .timeline-edit-position img {
+        width: 100%;
+        height: 100%; }
+    /* line 441, source/_sass/timeline.scss */
+    .timeline-edit-sum {
+      width: auto;
+      height: auto;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flex;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Noto Sans Japanese';
+      font-size: 15px;
+      line-height: 1;
+      color: #6f7579;
+      margin-left: auto; }
+      /* line 454, source/_sass/timeline.scss */
+      .timeline-edit-sum:after {
+        content: "/240"; }
+
+/* line 471, source/_sass/timeline.scss */
+.modal_overlay.active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity .5s; }
+
+/* line 476, source/_sass/timeline.scss */
+.modal_overlay .modal_content {
+  width: 75%; }
+
+/* line 479, source/_sass/timeline.scss */
+.modal_overlay .modal_content-btn2 .close_button {
+  padding: .8em 0;
+  color: #0578fe; }
+
+/* line 488, source/_sass/timeline.scss */
+.position-box {
+  width: 100%;
+  height: auto;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  position: relative; }
+  /* line 494, source/_sass/timeline.scss */
+  .position-box__close {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    /* line 505, source/_sass/timeline.scss */
+    .position-box__close:after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: url(../images/common/position-close_icon.svg);
+      background-size: 10px; }
+  /* line 514, source/_sass/timeline.scss */
+  .position-box__head {
+    width: 100%;
+    height: auto;
+    font-family: 'Noto Sans Japanese';
+    font-size: 15px;
+    line-height: 1;
+    color: #222;
+    margin-bottom: 30px; }
+  /* line 523, source/_sass/timeline.scss */
+  .position-box__body {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px; }
+    /* line 527, source/_sass/timeline.scss */
+    .position-box__body input {
+      width: 100%;
+      height: auto;
+      border: none;
+      border-bottom: 1px #9d9d9d solid;
+      padding: 2px;
+      box-sizing: border-box;
+      font-family: 'Noto Sans Japanese';
+      font-size: 12px;
+      line-height: 1;
+      color: #222;
+      outline: none; }
+  /* line 541, source/_sass/timeline.scss */
+  .position-box__foot {
+    width: 100%;
+    height: auto;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    /* line 549, source/_sass/timeline.scss */
+    .position-box__foot button {
+      width: 75px;
+      height: 25px;
+      border-radius: 25px;
+      padding: 0;
+      background: #00c3c3;
+      font-family: 'Noto Sans Japanese';
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 1;
+      color: #fff;
+      outline: none; }
+
+/*# sourceMappingURL=../../sass */
+.page-title{
+  position: relative;
+  padding: 10px 10px 0 10px;
+  height: 35px;
+  border-bottom: 1px solid #CCCCCC;
+  display: flex;
+}
+.page-title div{
+  width:50%;
+}
+.page-title div button{
+  font-size: 14px;
+}
+.btn_cancel{
+  position: relative;
+  color: #31ACB0;
+  background: none;
+  text-align: left;
+}
+.btn_submit{
+  float: right;
+  position: relative;
+  border-radius: 20px;
+  background: #31ACB0;
+  color: #FFF;
+  height: 26px;
+  text-align: right;
+}
+.btn_dis_submit{
+  float: right;
+  position: relative;
+  border-radius: 20px;
+  background: #CCCCCC;
+  color: #FFF;
+  height: 26px;
+  text-align: right;
+}

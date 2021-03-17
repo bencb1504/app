@@ -1,0 +1,148 @@
+header {
+  position: relative;
+}
+header h1 {
+  width: calc(100% - 20px);
+  font-size: 15px;
+  font-weight: 300;
+  color: #30CCC3;
+  text-align: center;
+}
+header .back {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+}
+
+main{
+  padding-top:25px;
+}
+
+.ge2-3 h2 {
+  margin: 0 0 20px;
+  padding: 0 30px;
+  font-size: 20px;
+}
+
+.message {
+  width: calc(100% - 70px);
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  font-size: 11px;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+}
+
+.form-grpup {
+  padding: 0 5px;
+  font-size: 0;
+}
+
+.cast_block {
+  display: inline-block;
+  width: calc((100% / 3) - 4px);
+  margin: 0 2px 10px;
+}
+
+.cast_block span {
+  display: block;
+  margin: 2px 0 5px;
+  font-size: 11px;
+}
+
+.cast_block .icon {
+  position: relative;
+  display: block;
+  border-radius: 8px;
+  height: 0;
+  width: 100%;
+  padding-bottom: 100%;
+}
+.cast_block .icon p{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cast_block .icon p img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border-radius: 8px;
+}
+
+.cast_block input {
+  display: none;
+}
+
+.cast_block label {
+  display: block;
+  width: 80%;
+  height: 28px;
+  margin: 0 auto;
+  border: 1px solid #00C3C3;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #00C3C3;
+  line-height: 28px;
+  text-align: center;
+}
+
+.cast_block input:checked ~ label {
+  color: #fff;
+  border-color: transparent;
+  background-image: linear-gradient(20deg, #42E4B2 0%, #00C3C3 100%);
+}
+
+.cast_block input:checked ~ .icon::before {
+  position: absolute;
+  top: 0;
+  display: block;
+  content: "";
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border-radius: 8px;
+  border: solid 3px #00C3C3;
+  z-index: 99;
+}
+
+
+_::-webkit-full-page-media, _:future, :root .cast_block input:checked ~ .icon::before {
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+}
+
+.cast_block input:checked ~ .icon::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: url('../images/ge2-3/checked.svg');
+  width: 34px;
+  height: 24px;
+  padding: 10px 0 0;
+  background-color: #00C3C3;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.form_footer {
+  width: 100%;
+  height: 60px;
+  margin-top:15px;
+  background-image: linear-gradient(-162deg, #42E4B2 0%, #00C3C3 100%);
+  text-align: center;
+}
+
+.form_footer button{
+  display: block;
+}
+
+.form_footer a {
+  font-size: 18px;
+  line-height: 60px;
+  color: #fff;
+  text-decoration: none;
+}

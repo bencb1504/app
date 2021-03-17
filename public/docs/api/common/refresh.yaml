@@ -1,0 +1,28 @@
+post:
+  tags:
+    - Common
+  security:
+    - CheersAuth: []
+  summary: Refresh token user
+  operationId: refreshToken
+  produces:
+    - application/json
+  responses:
+    200:
+      description: successful operation
+      schema:
+        type: object
+        properties:
+          status:
+            type: boolean
+          data:
+            type: object
+            properties:
+              access_token:
+                type: string
+              token_type:
+                type: string
+              expires_in:
+                type: integer
+    401:
+      description: Unauthorized

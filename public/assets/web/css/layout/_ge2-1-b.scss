@@ -1,0 +1,126 @@
+.ge2-1-b{
+  padding-top:65px!important;
+  .cast-selected{
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    &__photo{
+      width: 60px;
+      height: 60px;
+      img{
+        width: 100%;
+        height: 100%!important;
+        object-fit:cover;
+        border-radius:10px;
+      }
+    }
+    &__content{
+      margin-left: 6px;
+      width: calc(100% - 60px);
+    }
+    &__name{
+      font-size: 14px;
+      font-weight:600;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    &__bottom{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+    }
+    &__signature{
+      width: 80px;
+      height: 24px;
+      background-image: linear-gradient(35deg, #ACFFDD 0%, #00DDFF 100%);
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      color: #fff;
+      border-radius: 30px;
+    }
+    &__price{
+      width: auto;
+      height: auto;
+      font-size: 11px;
+      line-height: 1;
+      color: #222222;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 15px;
+      box-sizing: border-box;
+      span{
+        font-size: 19px;
+        margin-left: 10px;
+        font-weight: bold;
+      }
+    }
+  }
+  .reservation-attention{
+    width: 100%;
+    height: auto;
+    margin-bottom:8px;
+    padding: 0 8px;
+    box-sizing: border-box;    
+    a{
+      color:#00c3c3;
+      font-size:12px;
+      text-align:right;
+      &:before{
+        content:"";
+        display:inline-block;
+        width:1.5em;
+        height:1.5em;
+        background:url("../images/common/info.svg") no-repeat center center;
+        background-size:contain;
+        vertical-align:text-bottom;
+      }    
+    }
+
+  }
+
+  .reservation-total{
+    width: 100%;
+    height: auto;
+    padding: 0 8px;
+    box-sizing: border-box;
+    &__content{
+      width: 100%;
+      height: auto;
+      padding: 25px 35px;
+      border:1px #00c3c3 solid;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+    &__sum{
+      width: 100%;
+      height: auto;
+      font-size: 17px;
+      color: #00c3c3;
+      line-height: 1;
+      font-weight: bold;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      span{
+        color: #222222;
+      }
+    }
+    &__text{
+      font-size: 14px;
+      color: #999999;
+      line-height: 1;
+    }
+  }
+
+}

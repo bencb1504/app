@@ -1,0 +1,60 @@
+$font-black:#222222;
+$font-glay:#C8C8C8;
+$font-glay2:#999999;
+$font-pink:#EE4477;
+$font-red:#D90909;
+$base-color:#00C3C3;
+$gray-color:#cccccc;
+$input-bg:#f6f6f6;
+$boder-color:#cccccc;
+$ttl-bg:#F3F2F2;
+
+@mixin flex{
+    display: -ms-flexbox; /* IE10 */
+    display: -webkit-box; /* Android4.3以下、Safari3.1〜6.0 */
+    display: -webkit-flex; /* Safari6.1以降 */
+    display:flex;
+}
+
+@mixin gradation{
+	background: -webkit-linear-gradient(20deg, #42E4B2 0%, #00C3C3 100%);
+	background: -o-linear-gradient(20deg, #42E4B2 0%, #00C3C3 100%);
+	background: -ms-linear-gradient(20deg, #42E4B2 0%, #00C3C3 100%);
+	background: linear-gradient(20deg, #42E4B2 0%, #00C3C3 100%);
+}
+
+// Round (小数点四捨五入)
+@function round-decimal ($number, $digits: 0) {
+    @return to-fixed($number, $digits, 'round');
+}
+
+// 表記例：round-decimal(変数 / 基準となるフォントサイズ + 0em)
+@function to-fixed ($number, $digits: 0, $round: 'round') {
+    $n: 1;
+    // $number must be a number
+    @if type-of($number) != number {
+        @warn '#{ $number } is not a number.';
+        @return $number;
+    }
+    // $digits must be a unitless number
+    @if type-of($digits) != number {
+        @warn '#{ $digits } is not a number.';
+        @return $number;
+    } @else if not unitless($digits) {
+        @warn '#{ $digits } has a unit.';
+        @return $number;
+    }
+    @for $i from 1 through $digits {
+        $n: $n * 10;
+    }
+    @if $round == 'round' {
+        @return round($number * $n) / $n;
+    } @else if $round == 'ceil' {
+        @return ceil($number * $n) / $n;
+    } @else if $round == 'floor' {
+        @return floor($number * $n) / $n;
+    } @else {
+        @warn '#{ $round } is undefined keyword.';
+        @return $number;
+    }
+}
